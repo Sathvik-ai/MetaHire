@@ -1,0 +1,24 @@
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Vamsi",
+    "email": "vamsi@gmail.com",
+    "password": "vamsi"
+}
+
+### 
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "vamsi@gmail.com",
+    "password": "vamsi"
+}
+
+###
+
+GET http://localhost:5000/api/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjkzZDhiNGM5ZmFlODViMTgyMzNlZiIsImlhdCI6MTc1MTcyNzk3NCwiZXhwIjoxNzUxNzMxNTc0fQ.hJnAhkoFqs47GdB3k2O-9iKLKgxKHBd-I7Y74TwgtiU
